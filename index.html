@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Grande e-Biblio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../images/pileli.png">
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap');
+
+        /* Réinitialiser les marges et les rembourrages pour une meilleure cohérence */
+        * {
+            font-family:'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color:white;
+
+        }
+        /* Style des liens visités */
+        /* a:visited {
+            color: purple;
+        } */
+
+        .boutton a {
+                border: 1px solid green;
+                background-color: blue;
+                color: white;
+                text-decoration: none;
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 25px;
+                font-weight:bolder;
+
+            }
+        .boutton:active{
+            transform : scale(0.95)
+        }
+
+        footer span{
+            color: blue;
+            font-weight:bolder;
+        }
+
+        footer {
+            text-align:center;
+            align-items: center;
+            background-color: rgb(80, 87, 100);
+            color: white;
+            padding: 10px;
+        }
+
+        /* Utilisation de flexbox pour la mise en page de l'en-tête */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(80, 87, 100);
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styles spécifiques pour le logo */
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        /* Utilisation de flexbox pour la navigation principale */
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+        header .span {
+            display: flex;
+            gap: 10px;
+            font-weight:bolder;
+            font-size: 90%;
+        }
+        header .span a {
+            text-decoration: none;
+            color: white;
+        }
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight:bolder;
+            font-size: 100%;
+        }
+        .main-content nav{
+            display: flex;
+            gap: 4em;
+
+        }
+        .main-content nav a{
+            text-decoration: none;
+            /* color: black;  */
+            font-weight:bolder;
+        }
+
+        /* Utilisation de flexbox pour la section principale */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-image: url(../images/bureau.jpg)
+
+        }
+
+        /* Styles spécifiques pour la section du texte */
+        .text {
+            /* background-color: rgb(127,127,127); */
+            /* background-image: url(../images/bureau.jpg) */
+            color: white;
+            padding: 20px;
+            padding-right: 350px;
+            text-align: left;
+        }
+        a:hover{
+            /* text-decoration: underline; */
+            color: rgb(0, 255, 0);
+            /* translate:scale(5px) */
+        }
+        a:active{
+            /* text-decoration:underline; */
+            color: rgb(43, 0, 255);
+        }
+
+        /* Utilisation de media queries pour les écrans plus petits */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header .logo {
+                margin-bottom: 10px;
+            }
+
+            header nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            /* Réduisez la taille du logo pour les petits écrans */
+            header .logo img {
+                height: 30px;
+            }
+
+            /* Styles spécifiques pour la section du texte sur les petits écrans */
+            .text {
+                padding: 10px;
+                font-size: 16px;
+            }
+            .main-content nav{
+            gap: 0.8em;
+            font-size:90%;
+        }
+        header .span {
+            display: flex;
+            gap: 10px;
+            font-weight:bolder;
+            font-size: 80%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/pileli.png" alt="le logo">
+            <h1>Ma Grande e-BiBlio</h1>
+        </div>
+        <div class="span">
+            <span><i class="fa-solid fa-phone"></i> (+229) 67 17 63 32</span>
+            <span><i class="fa-solid fa-m" style="color: rgb(198, 8, 8); border: solid white;background-color: white;border-radius: 5px;"></i><a href="mailto:sardreseau@gmail.com"> magrandeebiblio@yahoo.com</a></span>
+            <span><a href="https://www.facebook.com/MaBiblioNumerique/?modal=focused_switcher_dialog"><i class="fa-brands fa-facebook" style="color: rgb(44, 179, 224);background-color: white;border-radius: 50%;"></i></a></span>
+            <span><a href=""><i class="fa-brands fa-linkedin" style="color: rgb(44, 179, 224);"></i></a></span>
+            <span><a href="https://www.youtube.com/@edmteamselecbenin3296/about"><i class="fa-brands fa-youtube" style="color: rgb(250, 54, 54);"></i></a></span>
+            <span><a href=""><i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i></a></span>
+            
+        </div>
+        <nav>
+            <a href="Connexion.php"><i class="fa-solid fa-lock"></i> Se Connecter</a>
+            <a href="Inscription.php">S'inscrire</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <nav>
+            <a href="index.php" style="text-decoration:underline; color : red;">ACCUEIL</a>
+            <a href="rubriqinachever.php">COURS</a>
+            <a href="rubriqinachever.php">BLOG</a>
+            <a href="Apropos.php">A PROPOS</a>
+            <a href="evenement.php">EVENEMENTS A VENIR</a>
+        </nav>
+        <section class="text">
+            <br><br>
+            <h4>LISEZ CE QUE VOUS AIMEZ</h4> <br> 
+            <h1 style="font-size:200%">LA LECTURE PEUT <br>TRANSFORMER UNE VIE</h1> <br>
+            <p>Étancher la soif de l’esprit, nourrissez votre intellect, lire de bons livres pour grandir,
+             construire  <br> une base plus solide, soyez un meilleur humain chaque jour, l’esprit humain a besoin de connaissances, 
+             <br>les bons livres rendent les humains meilleurs, pour les esprits avides d’apprendre, l’apprentissage ne s’arrête jamais</p>
+<br> 
+<br> 
+<br> 
+            <span class="boutton"><a href="CatalogueS.php">Commencez maintenant</a></span>
+        </section>
+    </div>
+    <footer>
+        <div>Tous droits réservés à <span>Ma Grande e-Biblio</span> &copy;</div>
+    </footer>
+</body>
+</html>
